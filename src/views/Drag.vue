@@ -238,6 +238,7 @@ export default {
         // 鼠标抬起--将移动事件置空
         document.onmouseup = () => {
           document.onmousemove = null;
+          console.log("dddd");
         };
       };
     });
