@@ -19,6 +19,42 @@ const routes = [
     component: () =>
       import(/* webpackChunkName: "about" */ "../views/About.vue"),
   },
+  {
+    path: "/v-viewer",
+    name: "V-viewer",
+    // route level code-splitting
+    // this generates a separate chunk (about.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: () =>
+      import(/* webpackChunkName: "about" */ "../views/Viewer.vue"),
+  },
+  {
+    path: "/practice_model",
+    name: "practice_model",
+    // route level code-splitting
+    // this generates a separate chunk (about.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: () =>
+      import(/* webpackChunkName: "about" */ "../views/practice/Model.vue"),
+  },
+  {
+    path: "/practice_grid",
+    name: "practice_grid",
+    // route level code-splitting
+    // this generates a separate chunk (about.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: () =>
+      import(/* webpackChunkName: "about" */ "../views/GridIndex.vue"),
+  },
+  {
+    path: "/practice_drag",
+    name: "practice_drag",
+    // route level code-splitting
+    // this generates a separate chunk (about.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: () =>
+      import(/* webpackChunkName: "about" */ "../views/DragIndex.vue"),
+  },
 ];
 
 const router = new VueRouter({
