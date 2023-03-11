@@ -55,6 +55,14 @@ const routes = [
     component: () =>
       import(/* webpackChunkName: "about" */ "../views/DragIndex.vue"),
   },
+  {
+    path: "/practice_table",
+    name: "practice_table",
+    // route level code-splitting
+    // this generates a separate chunk (about.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: () => import(/* webpackChunkName: "about" */ "../views/table"),
+  },
 ];
 
 const router = new VueRouter({
